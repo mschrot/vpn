@@ -63,8 +63,11 @@ http://SERVER-IP:51821
 
 ⚠️ Wichtige Einstellungen
 
-WG_HOST=DEINE_SERVER_IP
-PASSWORD=SICHERES_PASSWORT
+    environment:
+      - WG_HOST=203.0.113.99 # ⚠️ IP ändern!
+      - PASSWORD=mein_passwort # ⚠️ passwort ändern!
+      - WG_DEFAULT_DNS=10.10.0.2
+      - WG_PORT=51820
 
 --------------------------------------------------
 
