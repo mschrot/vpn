@@ -1,4 +1,3 @@
-```bash
 #!/bin/bash
 
 # Docker und Portainer Installationsskript für Ubuntu Server 24.04
@@ -181,4 +180,3 @@ echo ""
 echo "============================================"
 echo -e "${GRUEN}Fertig 🚀${NC}"
 echo "============================================"
-```
