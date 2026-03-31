@@ -1,0 +1,12 @@
+Firewall-Portfreigabe für AdGuard- und WireGuard-Services:
+
+TCP: 9000, 53, 81, 3001, 51821
+UDP: 53, 51820
+
+Meine Empfehlung für bessere Sicherheit:
+SSH und das Admin-Panel nur für die eigene IP freigeben.
+Verwende sichere Passwörter mit mehr als 12 Zeichen, einschließlich Groß- und Kleinbuchstaben sowie Sonderzeichen.
+
+
+
+

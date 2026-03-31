@@ -1,0 +1,68 @@
+🐧 Ubuntu/Linux Tutorial
+Einfach diesen Text in eine .txt Datei kopieren und speichern ✅
+________________________________________
+
+👤 Benutzer erstellen
+sudo adduser BENUTZERNAME
+➡️ Erstellt neuen Benutzer + fragt nach Passwort
+________________________________________
+
+🛡️ Benutzer zu sudo hinzufügen
+sudo usermod -aG sudo BENUTZERNAME
+✔ Gibt Admin-Rechte
+________________________________________
+
+🔑 Passwort ändern
+Eigenes Passwort:
+passwd
+Für anderen Benutzer:
+sudo passwd BENUTZERNAME
+________________________________________
+
+❌ Benutzer löschen
+Nur Benutzer:
+sudo deluser BENUTZERNAME
+Mit Home-Ordner:
+sudo deluser --remove-home BENUTZERNAME
+________________________________________
+
+📁 Ordner erstellen
+mkdir ORDNERNAME
+Mehrere:
+mkdir ordner1 ordner2
+________________________________________
+
+📄 Datei erstellen
+Leere Datei:
+touch datei.txt
+Text in Datei schreiben:
+echo "Hallo Welt" > datei.txt
+________________________________________
+
+❌ Ordner löschen
+rmdir ordnername
+
+⚠️ Ordner mit Inhalt löschen
+rm -r ordnername
+________________________________________
+
+❌ Datei löschen
+rm datei.txt
+_______________________________________
+
+📜 Dateien anzeigen
+ls
+Mit Details:
+ls -l
+Versteckte Dateien:
+ls -la
+________________________________________
+
+📂 Navigation
+Aktuelles Verzeichnis:
+pwd
+Ordner wechseln:
+cd ORDNERNAME
+Zurück:
+cd ..
+
