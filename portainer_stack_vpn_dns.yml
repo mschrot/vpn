@@ -6,7 +6,7 @@ version: "3.9"
 
 services:
   adguardhome:
-    image: adguard/adguardhome
+    image: adguard/adguardhome:latest
     container_name: adguardhome
     restart: unless-stopped
 
@@ -16,8 +16,8 @@ services:
     ports:
       - "53:53/tcp"
       - "53:53/udp"
-      - "81:80/tcp"
-      - "3000:3000/tcp"
+      - "81:80/tcp" # ⚠️ Admin-Panel!
+      - "3000:3000/tcp" # ⚠️ Nach Setup schließe!
 
     volumes:
       - adguard-work:/opt/adguardhome/work
@@ -40,7 +40,7 @@ services:
 
     ports:
       - "51820:51820/udp"
-      - "51821:51821/tcp"
+      - "51821:51821/tcp" # ⚠️ Admin-Panel!
 
     volumes:
       - wireguard-data:/etc/wireguard
