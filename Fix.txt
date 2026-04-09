@@ -1,0 +1,34 @@
+🚨 **Fix: VPS Speicher voll durch AdGuard Home (Docker)**
+
+Wenn euer Server plötzlich keinen Speicher mehr hat, liegt es oft an den AdGuard Logs.
+
+Einstellungen / Allgemeine Einstellugnen
+👉 Konfiguration der Protokolle ✅ Abfragen Protokolle leeren
+👉 Statistikkonfiguration ✅ Statistiken leeren
+
+💡 Tipp:
+Oder einfach Statistik Logs deaktivieren.
+
+-------------------------------------------
+
+💥 Lösung 2 (löscht Logs & Statistiken, aber NICHT eure Config):
+
+Terminal Befehl:
+
+docker stop adguardhome
+rm -rf /var/lib/docker/volumes/vpn_adguard-work/_data/*
+docker start adguardhome
+
+✅ Danach habt ihr sofort wieder mehrere GB frei.
+
+⚠ Wichtig:
+
+* Nur Logs & Statistiken werden gelöscht
+* DNS & Einstellungen bleiben erhalten
+
+🛡 Damit es nicht wieder passiert:
+Geht in AdGuard → Settings → Query Log
+👉 Setzt die Speicherzeit auf z. B. **7 Tage** oder deaktiviert Logs komplett.
+
+💡 Tipp:
+10 GB VPS + AdGuard = schnell voll → besser 20–40 GB nutzen
